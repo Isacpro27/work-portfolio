@@ -30,6 +30,15 @@ body {
     color: #ffffff;
 }
 
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon svg {
+    fill: #ffffff;
+}
+
 .navbar ul {
     display: flex;
     list-style: none;
@@ -145,4 +154,96 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgb(56, 26, 228);
+        flex-direction: column;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 1rem 0;
+    }
+
+    .two {
+        margin-top: 3rem;
+        padding: 3rem 1rem;
+    }
+
+    .two h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .service-card {
+        margin: 0.5rem 0;
+    }
+
+    .service-card h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar label {
+        font-size: 1.2rem;
+    }
+
+    .two h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-card {
+        padding: 1rem;
+    }
+
+    .service-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .service-card .price {
+        font-size: 1.3rem;
+    }
+}
+
+/* Add these styles for menu icon animation */
+.menu-icon svg path {
+    transition: transform 0.3s ease;
+}
+
+.menu-icon.active svg path:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-icon.active svg path:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active svg path:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
 }

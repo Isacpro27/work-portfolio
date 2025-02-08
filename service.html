@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my services</title>
+    <title>My Services</title>
     <link rel="stylesheet" href="service.css">
     <link rel="prefetch" href="index.html">
 </head>
@@ -13,7 +13,14 @@
     <header class="head">
         <nav class="navbar">
             <label for="logo">Lubangakene Isaac</label>
-            <ul>
+            <div class="menu-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <ul class="nav-links">
                 <li><a href="/#home">Home</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -71,6 +78,28 @@
     <footer>
         <p>&copy; 2025 Professional Services. All rights reserved.</p>
     </footer>
-</body>
+    <!-- Add Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav-links');
+            const navItems = document.querySelectorAll('.nav-links a');
 
+            // Toggle menu when hamburger icon is clicked
+            menuIcon.addEventListener('click', function() {
+                menuIcon.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when any navigation link is clicked
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    menuIcon.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
 </html>

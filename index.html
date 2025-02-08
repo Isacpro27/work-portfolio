@@ -12,28 +12,119 @@
     <header class="head">
         <nav class="navbar">
             <label for="logo">Lubangakene Isaac</label>
-            <ul>
-                <li><a href="#home"><span class="material-icons" id="icons">home</span>Home</a></li>
-                <li><a href="#about"><span class="material-icons" id="icons">info</span>About</a></li>
-                <li><a href="#portfolio"><span class="material-icons"id="icons">work</span>Portfolio</a></li>
-                <li><a href="#contact"><span class="material-icons" id="icons">contacts</span>Contact</a></li>
-            </ul>                
+            
+            <!-- Add this new menu icon div -->
+            <div class="menu-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+    
+            <!-- Update your existing ul with this class -->
+            <ul class="nav-links">
+                <li><a href="#home">
+                    <span class="material-icons" id="icons">home</span>
+                    <span>Home</span>
+                </a></li>
+                <li><a href="#about">
+                    <span class="material-icons" id="icons">info</span>
+                    <span>About</span>
+                </a></li>
+                <li><a href="#portfolio">
+                    <span class="material-icons" id="icons">work</span>
+                    <span>Portfolio</span>
+                </a></li>
+                <li><a href="#contact">
+                    <span class="material-icons" id="icons">contacts</span>
+                    <span>Contact</span>
+                </a></li>
+            </ul>
         </nav>
     </header>
     <section class="first" id="home">
         <section class="content">
             <img src="first.JPG" alt="my picture">
             <div class="text">
-                <h2>Hi am</h2>
-                <h1>lubangakene Isaac</h1>
+                <h2>Hi there, I'm</h2>
+                <h1>Lubangakene Isaac</h1>
                 <h2>Front-end Developer</h2>
-                <p> Welcome to my world!<br><str>Have</i> <br> Your next interacting experience <br>With my Websites</p>
-            </div>
+                <p>Specializing in creating beautiful and functional web applications. Discover my projects and let's make your vision a reality.</p>            </div>
         </section>
     </section>
     <section class="second" id="about">
         <section class="content1">
-            <img src="second.JPG" alt="my picture">
+            <div class="svg">
+                <svg class="services-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+                    <!-- Background -->
+                    <rect width="800" height="900" fill="#f8fafc"/>
+                    
+                    <!-- Web Development Section -->
+                    <g transform="translate(100, 100)">
+                        <rect x="0" y="0" width="200" height="160" rx="15" fill="#2563eb" opacity="0.9"/>
+                        <text x="100" y="50" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Web Development</text>
+                        <path d="M40 80 L80 120 L120 80" stroke="white" fill="none" stroke-width="3"/>
+                        <path d="M140 100 L160 80 L180 100" stroke="white" fill="none" stroke-width="3"/>
+                    </g>
+
+                    <!-- Graphic Design Section -->
+                    <g transform="translate(500, 100)">
+                        <rect x="0" y="0" width="200" height="160" rx="15" fill="#0891b2" opacity="0.9"/>
+                        <text x="100" y="50" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Graphic Design</text>
+                        <circle cx="70" cy="100" r="25" fill="none" stroke="white" stroke-width="3"/>
+                        <rect x="120" y="80" width="40" height="40" fill="none" stroke="white" stroke-width="3"/>
+                    </g>
+
+                    <!-- SEO Section -->
+                    <g transform="translate(100, 300)">
+                        <rect x="0" y="0" width="200" height="160" rx="15" fill="#6366f1" opacity="0.9"/>
+                        <text x="100" y="50" font-family="Arial" font-size="16" fill="white" text-anchor="middle">SEO Optimization</text>
+                        <path d="M60 100 L140 100" stroke="white" stroke-width="3"/>
+                        <path d="M80 80 L100 120 L120 90" stroke="white" fill="none" stroke-width="3"/>
+                    </g>
+
+                    <!-- Mobile App Section -->
+                    <g transform="translate(500, 300)">
+                        <rect x="0" y="0" width="200" height="160" rx="15" fill="#8b5cf6" opacity="0.9"/>
+                        <text x="100" y="50" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Mobile App Design</text>
+                        <rect x="70" y="70" width="60" height="100" rx="5" fill="none" stroke="white" stroke-width="3"/>
+                        <circle cx="100" cy="150" r="8" fill="white"/>
+                    </g>
+
+                    <!-- Maintenance Section -->
+                    <g transform="translate(100, 500)">
+                        <rect x="0" y="0" width="200" height="160" rx="15" fill="#ec4899" opacity="0.9"/>
+                        <text x="100" y="50" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Website Maintenance</text>
+                        <path d="M60 100 A40 40 0 1 1 140 100" stroke="white" fill="none" stroke-width="3"/>
+                        <path d="M90 90 L110 110 M110 90 L90 110" stroke="white" stroke-width="3"/>
+                    </g>
+
+                    <!-- Photography Section -->
+                    <g transform="translate(500, 500)">
+                        <rect x="0" y="0" width="200" height="160" rx="15" fill="#f59e0b" opacity="0.9"/>
+                        <text x="100" y="50" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Photography</text>
+                        <circle cx="100" cy="100" r="30" fill="none" stroke="white" stroke-width="3"/>
+                        <circle cx="100" cy="100" r="20" fill="none" stroke="white" stroke-width="3"/>
+                        <circle cx="120" cy="80" r="5" fill="white"/>
+                    </g>
+
+                    <!-- Connecting Lines -->
+                    <g stroke="#cbd5e1" stroke-width="2">
+                        <path d="M300 180 L500 180" fill="none"/>
+                        <path d="M300 380 L500 380" fill="none"/>
+                        <path d="M300 580 L500 580" fill="none"/>
+                        <path d="M200 260 L200 300" fill="none"/>
+                        <path d="M600 260 L600 300" fill="none"/>
+                        <path d="M200 460 L200 500" fill="none"/>
+                        <path d="M600 460 L600 500" fill="none"/>
+                    </g>
+
+                    <!-- Central Circle -->
+                    <circle cx="400" cy="450" r="40" fill="#0f172a" opacity="0.9"/>
+                    <text x="400" y="455" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Services</text>
+                </svg>
+            </div>
             <div class="explain">
                 <h1>About Isaac</h1>
                 <h3>
@@ -42,6 +133,37 @@
                 <a href="service.html" target="_blank">Work with me</a>
             </div>
         </section>
+        <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <p>Here are some of the projects I've worked on. Click on the images to view more details.</p>
+        
+        <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="portfolio-info">
+                    <h3>Project Title 1</h3>
+                    <p>Short description of the project. Highlight the technologies used and the main features.</p>
+                    <a href="https://github.com/Isacpro27/project1" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="portfolio-info">
+                    <h3>Project Title 2</h3>
+                    <p>Short description of the project. Highlight the technologies used and the main features.</p>
+                    <a href="https://github.com/Isacpro27/project2" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+</section>
         <section id="technical-skills" class="skills-section">
             <div class="container">
                 <h1>Technical Proficiencies</h1>
@@ -185,6 +307,26 @@
     
     <!-- Add Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+    
+    // Toggle menu when hamburger icon is clicked
+    menuIcon.addEventListener('click', function() {
+        menuIcon.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+    
+    // Close menu when any navigation link is clicked
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            menuIcon.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+});
+</script>
 </body>
 </html>
-
